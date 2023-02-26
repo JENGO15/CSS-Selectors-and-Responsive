@@ -24,7 +24,6 @@ Header {
 .menu-options {
   display: flex; /* Muestra la lista de opciones en línea */
   justify-content: center; /* Centra las opciones horizontalmente */
-  
 }
 
 .menu-options li {
@@ -47,8 +46,6 @@ Header {
   cursor: pointer;
 }
 
-
-
 .menu-options a {
   font-family: "Source Sans Pro";
   font-style: normal;
@@ -59,12 +56,12 @@ Header {
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.2em;
-  
+
   display: inline-block;
   padding: 15px 20px;
   position: relative;
 }
-a:after {    
+a:after {
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
@@ -76,25 +73,21 @@ a:after {
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
-a:hover:after { 
-  width: 100%; 
-  left: 0; 
+a:hover:after {
+  width: 100%;
+  left: 0;
 }
 
-
-@media  screen and (max-width: 768px) {
-
-  header{
+@media screen and (max-width: 768px) {
+  header {
     padding: 20px 5% 0 50px;
   }
-
 
   /* Mostrar el botón de menú */
   #menu-btn {
     display: none;
-    
   }
-  a:after {    
+  a:after {
     background: none repeat scroll 0 0 transparent;
     bottom: 0;
     content: "";
@@ -106,16 +99,16 @@ a:hover:after {
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
   }
-  a:hover:after { 
-    width: 100%; 
-    left: 0; 
+  a:hover:after {
+    width: 100%;
+    left: 0;
   }
 
   /* Mostrar el icono de menú */
   .menu-icon {
     display: grid;
     color: #ffffff;
-    place-content:flex-end;
+    place-content: flex-end;
   }
 
   /* Ocultar el menú de opciones */
@@ -127,112 +120,99 @@ a:hover:after {
     right: 0;
     z-index: 1;
     padding: 10px;
-    background-color:white ;
+    background-color: white;
     border-bottom: 1px solid #ccc;
   }
 
-.menu-options a{
+  .menu-options a {
     color: black;
-}  /* Mostrar el menú de opciones cuando se haga clic en el icono de menú */
-#menu-btn:checked ~ .menu-options {
+  } /* Mostrar el menú de opciones cuando se haga clic en el icono de menú */
+  #menu-btn:checked ~ .menu-options {
     display: block;
-}
+  }
 
   /* Estilos adicionales para las opciones del menú */
-.menu-options li {
+  .menu-options li {
     margin: 10px 0; /* Espacio entre las opciones */
     color: transparent;
-}
+  }
 
-  
-.Main{
-  height: auto;
-}
- .flex-main-container {
-  height:auto;
-  
- }
+  .Main {
+    height: auto;
+  }
+  .flex-main-container {
+    height: auto;
+  }
 
-.flex-main-container{
+  .flex-main-container {
     flex-direction: column;
     align-items: center;
     overflow: scroll;
     flex-wrap: wrap;
-   
+  }
 
-}
+  .Main #BtnRead {
+    margin: 0px;
+    padding: 0px;
+  }
 
-.Main #BtnRead{
-  margin: 0px;
-  padding: 0px;
-}
+  .footer_items p {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    justify-self: center;
+    text-align: center;
+  }
 
-.footer_items p{
-  grid-column-start:2;
-  grid-column-end: 2;
-  justify-self: center;
-  text-align: center;
- 
-}
+  .Footer .footer_items #p1 {
+    margin-left: 0px;
+  }
 
-.Footer .footer_items #p1{
-  margin-left: 0px;
-
-}
-
-
-.Footer .footer_items{
-  height: auto;
-  background-color: #464547;
-  
-  
-}
-
-
-
+  .Footer .footer_items {
+    height: auto;
+    background-color: #464547;
+  }
 }
 
 /* FIN MEDIA QUERY */
 
 .Hero {
-
   width: 100vw;
   height: 822px;
   text-align: center;
   background-image: url(/assets/Desktop_Backgrounds_1920x1200_6\ 3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.contenedor_textoHero{
+.contenedor_textoHero {
   display: flex;
   flex-wrap: nowrap;
 
   align-items: center;
   align-content: center;
-  flex-direction: column; 
-
+  flex-direction: column;
 
   width: 100vw;
   height: 100vh;
-  
+
   text-align: center;
   padding-top: 10%;
-  height:80%;
+  height: 80%;
 }
 
 .imagenlogo {
-
   margin-left: auto;
   margin-right: auto;
+ 
 }
 
+
 .Hero h1 {
-  /* display: block; */
   font-family: "Oswald";
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
   line-height: 64px;
-
 
   text-align: center;
 
@@ -240,28 +220,21 @@ a:hover:after {
 }
 
 .Hero h2 {
-  /* display: block; */
   font-family: "Source Sans Pro";
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 32px;
- 
 
   text-align: center;
 
   color: rgba(255, 255, 255, 0.7);
-
 }
 
 .Main {
-
   width: 100vw;
   height: auto;
-  /* flex-wrap: nowrap; */
-
   justify-content: center;
- 
   text-align: center;
   background: #eeeeee;
 }
@@ -275,7 +248,7 @@ a:hover:after {
   font-weight: 700;
   font-size: 48px;
   line-height: 64px;
-  
+
   text-align: center;
 
   color: #464547;
@@ -284,7 +257,6 @@ a:hover:after {
 }
 
 .Main h3 {
-
   height: 57px;
   top: 1046px;
 
@@ -293,7 +265,6 @@ a:hover:after {
   font-weight: 400;
   font-size: 24px;
   line-height: 32px;
- 
 
   text-align: center;
 
@@ -325,16 +296,12 @@ a:hover:after {
   color: #000000;
 }
 
-.flex-main-container{
-  display: flex; 
+.flex-main-container {
+  display: flex;
   flex-direction: row;
-  
-  justify-content: center; 
-  
+
+  justify-content: center;
 }
-
-
-
 
 .Main #BtnRead {
   margin: 25px;
@@ -352,13 +319,14 @@ a:hover:after {
 }
 
 
-
 .Learn_more {
   display: grid;
   place-content: center;
   width: 100vw;
   height: 637px;
   background-image: url(/assets/Learn-more.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .Learn_more h2 {
@@ -369,7 +337,6 @@ a:hover:after {
   line-height: 64px;
 
   text-align: center;
-
   color: #ffffff;
 }
 
@@ -382,6 +349,7 @@ a:hover:after {
   text-align: center;
   background: #39c2d7;
   color: #ffffff;
+  
 }
 
 .Learn_more h3 {
@@ -402,19 +370,17 @@ a:hover:after {
   background: #464547;
 }
 
-.Footer a{
-  font-family: 'Source Sans Pro';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 19px;
-color: rgba(255, 255, 255, 0.4);
-text-decoration: none;
+.Footer a {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(255, 255, 255, 0.4);
+  text-decoration: none;
 }
 
- 
 .Footer #p1 {
-
   margin-left: 30px;
 
   font-family: "Source Sans Pro";
@@ -429,13 +395,9 @@ text-decoration: none;
   color: #ffffff;
 
   align-self: top;
-
-
-
 }
 
 .Footer #p2 {
-
   margin-top: 0%;
   font-family: "Source Sans Pro";
   font-style: normal;
@@ -447,14 +409,9 @@ text-decoration: none;
 
   align-items: start;
   text-align: left;
-
 }
 
-
-
 .Footer #p3 {
-
-
   margin-top: 0%;
   font-family: "Source Sans Pro";
   font-style: normal;
@@ -466,17 +423,11 @@ text-decoration: none;
 
   align-self: end;
   text-align: center;
-
- 
 }
 
-
-
-.footer_items  {
+.footer_items {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
-  /* grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); */
+  grid-template-columns: repeat(3, 1fr);
   justify-content: space-between;
   grid-auto-flow: dense;
 }
-
