@@ -332,21 +332,7 @@ a:hover:after {
   justify-content: center; 
   
 }
-/* 
-#pm1 #pm2 {
-  width: 408px;
-  height: 172px;
-  font-family: "Source Sans Pro";
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  text-align: justify;
-  margin: 5px;
-  padding: 5%;
-  border-box:;
 
-
-} */
 
 
 
@@ -388,7 +374,6 @@ a:hover:after {
 }
 
 .Learn_more #BtnPlay {
-  /* display: block; */
   place-self: center;
   width: 150px;
   height: 150px;
@@ -480,9 +465,9 @@ text-decoration: none;
   color: rgba(255, 255, 255, 0.4);
 
   align-self: end;
+  text-align: center;
 
-  /* align-items: end;
-  margin-right: 50px; */
+ 
 }
 
 
